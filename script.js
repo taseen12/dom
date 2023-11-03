@@ -2,26 +2,16 @@ function process(){
   var person = document.getElementById("nameBox").value ; 
   
   var totalmarks = parseInt(document.getElementById("marksBox").value) ; 
+  let message;
+
   if (totalmarks >= 90 ) {
-    document.getElementById("content").innerHTML= 
-    `
-    <h4>Hello ${person}, your grade is 4.00 </h4>
-    `
-    ; 
+   msg=  ` <h4>Hello ${person}, your grade is 4.00 </h4>`; 
   }
   else if (totalmarks >= 85 ) {
-    document.getElementById("content").innerHTML= 
-    `
-    <h4>Hello ${person}, your grade is 3.7 </h4>
-    `
-    ; 
+    msg=  ` <h4>Hello ${person}, your grade is 3.7 </h4>`;
   }
   else if (totalmarks >= 80 ) {
-    document.getElementById("content").innerHTML= 
-    `
-    <h4>Hello ${person}, your grade is 3.3 </h4>
-    `
-    ; 
+    msg=  ` <h4>Hello ${person}, your grade is 3.3 </h4>`;
   }
   else if (totalmarks >= 75 ) {
     document.getElementById("content").innerHTML= 
@@ -77,5 +67,8 @@ function process(){
     `
     <h4>Hello ${person}, your grade is 0.0 / Fail </h4>
     `
+
     ; 
-    }}
+    }
+    document.getElementById("content").innerHTML = msg}
+    console.log(content)
