@@ -5,10 +5,10 @@ function process(){
   let message;
 
   if (totalmarks >= 90 ) {
-   msg=  ` <h4>Hello ${person}, your grade is 4.00,TOP </h4>`; 
+   msg=  ` <h4>Hello ${person}, your grade is 4.00,TOPPer </h4>`; 
   }
   else if (totalmarks >= 85 ) {
-    msg=  ` <h4>Hello ${person}, your grade is 3.7 </h4>`;
+    msg=  ` <h4>Hello ${person}, your grade is 3.7 </h4,Second best>`;
   }
   else if (totalmarks >= 80 ) {
     msg=  ` <h4>Hello ${person}, your grade is 3.3 </h4>`;
@@ -59,6 +59,13 @@ function process(){
       document.getElementById("content").innerHTML= 
     `
     <h4>Hello ${person}, your grade is 1.0 </h4>
+    `
+    ; 
+    }
+    else if (totalmarks >= 40 ) {
+      document.getElementById("content").innerHTML= 
+    `
+    <h4>Hello ${person}, your grade is 0.5 </h4>
     `
     ; 
     }
